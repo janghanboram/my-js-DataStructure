@@ -11,14 +11,14 @@
 ### 2.2 배열 사용하기
 #### 2.2.1 배열 만들기
 - [] 사용
-```
+```javascript
 // 길이가 0인 배열이 만들어진다.
 var numbers1 = []; 
 
 var numbers2 = [1,2,3,4,5];
 ```
 - Array 생성자 호출
-```
+```javascript
 var numbers3 = new Array();
 
 // 생성자의 인자에 요소 집합을 제공한다. 
@@ -28,24 +28,24 @@ var numbers4 = new Array(1,2,3,4,5);
 var numbers5 = new Array(10); 
 ```
 - 다른 언어와는 다르게, js에서는 한 배열이 다양한 종류의 요소를 포함할 수 있다. 예시를 살펴보자.
-```
+```javascript
 var objects = [1, "Joe", true, null]
 ```
 - Array.isArray() 함수를 이용하면 특정 객체가 배열인지 아닌지 확인할 수 있다. **(+typeof 연산자로 배열을 확인해보면 'object'라고 알려주므로 주의할 것.)**
-```
+```javascript
 var numbers = 3; // false
 var arr = [1,2,3]; // true
 ```
 
 #### 2.2.2 배열 요소 접근하고 값 고치기
 - 생성한 배열에 []를 이용해 배열 요소에 값을 넣을 수 있다. 예를 들면, 다음 코드는 1부터 100까지의 숫자를 배열에 할당한다.
-```
+```javascript
 var nums = [];
 for(var i = 0; i < 100; ++i)
     nums[i] = i+1;
 ```
 - for문에서 length 프로퍼티를 이용하면 현재 배열의 실제 요소 수가 정확하게 반환되므로 언제나 모든 배열의 모든 요소에 접근할 수 있다.
-```
+```javascript
 var numbers = [1,2,3,4,5,6,7,8,9,10];
 var sum = 0;
 for (var i = 0; i < numbers.length; ++i )
@@ -55,9 +55,8 @@ console.log(sum) // 55 출력
 ```
 
 #### 2.2.3 문자열로 배열 만들기
-```
+```javascript
 var sentence = "the quick brown fox jumped over the lazy dog";
-
 ```
 #### 2.2.4 배열 전체에 적용되는 기능
 
